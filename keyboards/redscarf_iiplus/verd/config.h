@@ -19,16 +19,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x7778
-#define DEVICE_VER      0x0001
-#define MANUFACTURER    RedScarf
-#define PRODUCT         RedScarfII+
+#define VENDOR_ID 0xFEED
+#define PRODUCT_ID 0x7778
+#define DEVICE_VER 0x0001
+#define MANUFACTURER RedScarf
+#define PRODUCT RedScarfII +
 
 /* key matrix size */
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 18
-
 
 /*
  * Keyboard Matrix Assignments
@@ -39,9 +38,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * DIODE_DIRECTION: COL2ROW = COL = Anode (+), ROW = Cathode (-, marked on diode)
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
-*/
-#define MATRIX_ROW_PINS { }
-#define MATRIX_COL_PINS { F4, F1, F0, B3, D0, D1, D4, D5, D6, D7, F7, F6, D2, D3, B6, B5, B4, F5 }
+ */
+#define MATRIX_ROW_PINS \
+    {}
+#define MATRIX_COL_PINS \
+    { F4, F1, F0, B3, D0, D1, D4, D5, D6, D7, F7, F6, D2, D3, B6, B5, B4, F5 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
@@ -89,7 +90,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #endif
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 5
+#define DEBOUNCE 8
 
 /* define if matrix has ghost (lacks anti-ghosting diodes) */
 //#define MATRIX_HAS_GHOST
@@ -221,3 +222,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Bootmagic Lite key configuration */
 // #define BOOTMAGIC_LITE_ROW 0
 // #define BOOTMAGIC_LITE_COLUMN 0
+
+// Custom stuff
+#define COMBO_COUNT 1
+#define COMBO_TERM 300
